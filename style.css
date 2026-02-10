@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 4px;
+  justify-content: center;
+  user-select: none;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cell.selected {
+  background-color: #ffe066;
+}
+
+#word-list {
+  list-style: none;
+  padding: 0;
+}
+
+#word-list li {
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.cell.found {
+  background-color: #8ce99a;
+}
